@@ -39,7 +39,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "descricao": "Descrição da vaga...",
       "local": "São Paulo-SP",
       "salario": "3.500",
-      "remoto": true,
+      "remoto": "Presencial",
   }
   ```
 - **Código de Resposta:** 201 Created
@@ -51,7 +51,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "descricao": "Descrição da vaga...",
       "local": "São Paulo-SP",
       "salario": "3.500",
-      "remoto": true,
+      "remoto": "Presencial",
       "created_at": "2024-02-11T12:00:00.000000Z",
       "updated_at": "2024-02-11T12:00:00.000000Z"
   }
@@ -71,7 +71,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "descricao": "Descrição da vaga...",
       "local": "São Paulo-SP",
       "salario": "3.500",
-      "remoto": true,
+      "remoto": "Presencial",
       "created_at": "2024-02-11T12:00:00.000000Z",
       "updated_at": "2024-02-11T12:00:00.000000Z"
   }
@@ -87,7 +87,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
   {
       "titulo": "Desenvolvedor Frontend",
       "descricao": "Nova descrição da vaga...",
-      "remoto": false
+      "remoto": "Remoto"
   }
   ```
 - **Código de Resposta:** 200 OK
@@ -99,7 +99,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "descricao": "Descrição da vaga...",
       "local": "São Paulo-SP",
       "salario": "3.500",
-      "remoto": false,
+      "remoto": "Remoto",
       "created_at": "2024-02-11T12:00:00.000000Z",
       "updated_at": "2024-02-11T12:00:00.000000Z"
   }
