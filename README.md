@@ -37,7 +37,9 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
   {
       "titulo": "Desenvolvedor Full Stack",
       "descricao": "Descrição da vaga...",
-      "remoto": true
+      "local": "São Paulo-SP",
+      "salario": "3.500",
+      "remoto": true,
   }
   ```
 - **Código de Resposta:** 201 Created
@@ -47,6 +49,8 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "id": 1,
       "titulo": "Desenvolvedor Full Stack",
       "descricao": "Descrição da vaga...",
+      "local": "São Paulo-SP",
+      "salario": "3.500",
       "remoto": true,
       "created_at": "2024-02-11T12:00:00.000000Z",
       "updated_at": "2024-02-11T12:00:00.000000Z"
@@ -65,6 +69,8 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
       "id": 1,
       "titulo": "Desenvolvedor Full Stack",
       "descricao": "Descrição da vaga...",
+      "local": "São Paulo-SP",
+      "salario": "3.500",
       "remoto": true,
       "created_at": "2024-02-11T12:00:00.000000Z",
       "updated_at": "2024-02-11T12:00:00.000000Z"
@@ -90,10 +96,12 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
   {
       "id": 1,
       "titulo": "Desenvolvedor Frontend",
-      "descricao": "Nova descrição da vaga...",
+      "descricao": "Descrição da vaga...",
+      "local": "São Paulo-SP",
+      "salario": "3.500",
       "remoto": false,
       "created_at": "2024-02-11T12:00:00.000000Z",
-      "updated_at": "2024-02-11T12:30:00.000000Z"
+      "updated_at": "2024-02-11T12:00:00.000000Z"
   }
   ```
 
@@ -102,7 +110,7 @@ Esta API foi construída utilizando o framework Laravel e o banco de dados Postg
 - **Descrição:** Exclui uma vaga específica.
 - **Parâmetros da URL:**
   - `{id}`: ID da vaga a ser excluída.
-- **Código de Resposta:** 204 No Content
+- **Código de Resposta:** 200 Excluida com sucesso
 
 ## Considerações Finais
 Esta documentação fornece uma visão geral dos endpoints disponíveis nesta API. Certifique-se de utilizar os métodos HTTP corretos e fornecer os parâmetros necessários para interagir com a API de maneira adequada.
