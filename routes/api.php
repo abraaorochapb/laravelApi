@@ -2,18 +2,16 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\VagaController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/vagas', [VagaController::class, 'index'])->name('vagas.index');
+Route::prefix('/vaga')->group(function () {
+    Route::post('/post', [VagaController::class, 'store'])->name('vagas.store');
+    Route::get('/{id}', [VagaController::class, 'show'])->name('vagas.show');
+    Route::put('/{id}', [VagaController::class, 'update'])->name('vagas.update');
+    Route::delete('/{id}', [VagaController::class, 'destroy'])->name('vagas.destroy');
 });
